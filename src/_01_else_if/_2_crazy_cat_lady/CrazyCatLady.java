@@ -3,9 +3,19 @@ package _01_else_if._2_crazy_cat_lady;
 
 import java.net.URI;
 
+import javax.swing.JOptionPane;
+
 public class CrazyCatLady {
 	public static void main(String[] args) {
-		
+		String x = JOptionPane.showInputDialog("Enter the number of cat you have:");
+		int y=Integer.parseInt(x);
+		if(y>=3) {
+			JOptionPane.showMessageDialog(null, "You are CRAZY");
+			
+		}
+		if(y<3 && y>0) {
+			JOptionPane.showMessageDialog(null, "wow");
+		}
 		// 1. Ask the user how many cats they have
 		// 2. Convert their answer into an int
 		// 3. If they have 3 or more cats, tell them they are a crazy cat lady
